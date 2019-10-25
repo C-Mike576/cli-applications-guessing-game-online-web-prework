@@ -11,8 +11,12 @@ def get_input
   gets.chomp
 end
 
-def run_
+def run_guessing_game
   pc_nummber = my_num
+  prompt_user
+  input = get_input
+  if input == my_num
+    puts
   
   
 

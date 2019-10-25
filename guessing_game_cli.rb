@@ -14,15 +14,15 @@ def get_input
 end
 
 def run_guessing_game
-  pc_nummber = my_num
+  pc_num = my_num.to_s
   prompt_user
   binding.pry
   input = get_input
   binding.pry
-  if input == pc_nummber
+  if input == pc_num
     puts "You guessed the correct number!"
     exit!
-  elsif input != pc_nummber && input != 'exit'
+  elsif input != pc_num && input != 'exit'
     puts "Sorry! The computer guessed #{my_num}."
     exit!
   elsif input == 'exit'

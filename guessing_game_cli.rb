@@ -17,7 +17,9 @@ def run_guessing_game
   input = get_input
   if input == my_num
     puts "You guessed the correct number!"
-    ex
+    exit!
+  elsif input != my_num
+    puts 
   
   
 

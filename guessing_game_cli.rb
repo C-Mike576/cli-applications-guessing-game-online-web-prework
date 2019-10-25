@@ -21,12 +21,9 @@ def run_guessing_game
   binding.pry
   if input == pc_num
     puts "You guessed the correct number!"
-    exit!
   elsif input != pc_num && input != 'exit'
     puts "Sorry! The computer guessed #{my_num}."
-    exit!
   elsif input == 'exit'
     puts "Goodbye!"
-    exit!
   end
 end

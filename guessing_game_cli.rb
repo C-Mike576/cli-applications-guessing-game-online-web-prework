@@ -16,8 +16,8 @@ end
 def run_guessing_game
   pc_nummber = my_num
   prompt_user
-  input = get_input
   binding.pry
+  input = get_input
   if input == pc_nummber
     puts "You guessed the correct number!"
     exit!

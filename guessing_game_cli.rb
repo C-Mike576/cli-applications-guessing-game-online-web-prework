@@ -1,4 +1,6 @@
 # Code your solution here!
+require 'pry'
+
 def my_num
   rand(6) + 1
 end

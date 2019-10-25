@@ -15,12 +15,14 @@ def run_guessing_game
   pc_nummber = my_num
   prompt_user
   input = get_input
-  if input == my_num
+  if input == pc_nummber
     puts "You guessed the correct number!"
     exit!
-  elsif input != my_num
-    puts 
-  
-  
-
+  elsif input != pc_nummber && input != 'exit'
+    puts "Sorry! The computer guessed #{my_num}."
+    exit!
+  elsif input == 'exit'
+    puts "Goodbye!"
+    exit!
+  end
 end

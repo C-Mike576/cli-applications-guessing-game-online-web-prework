@@ -16,7 +16,7 @@ end
 def run_guessing_game
   pc_num = my_num.to_s
   prompt_user
-  input = get_input
+  input = get_input.to_s
   if input == pc_num
     puts "You guessed the correct number!"
     exit!

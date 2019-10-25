@@ -16,7 +16,8 @@ def run_guessing_game
   prompt_user
   input = get_input
   if input == my_num
-    puts
+    puts "You guessed the correct number!"
+    ex
   
   
 
